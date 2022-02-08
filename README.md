@@ -1,5 +1,5 @@
 # rslang
 Team 19
 @SiarheiTamkovich
-@Aibekkoikelov
+@GosuJmen
 @Veru44ia
