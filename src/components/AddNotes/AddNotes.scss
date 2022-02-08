@@ -1,0 +1,91 @@
+.notes-container {
+  display: block;
+  width: 80%;
+  margin: 5px auto;
+}
+
+.notes-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+
+.notes-form > input {
+  box-sizing: border-box;
+  width: 68%;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 1px;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.8s;
+}
+
+.notes-form > input:hover {
+  background-color: rgba(44, 53, 54, 0.3);
+  border-bottom: 2px solid #fff;
+  margin-top: 0;
+}
+
+.notes-form > input:focus {
+  box-shadow: 0 0 5px 2px black;
+}
+
+.notes-form > button {
+  margin: 0 0 0 2px;
+  padding: 5px 10px;
+  background-color: rgba(44, 53, 54, 0.4);
+  transition: 0.8s;
+  font-size: 14px;
+}
+
+.notes-container ul li {
+  width: 90%;
+  list-style-type: none;
+}
+
+.notes-text {
+  display: inline-block;
+  width: 82%;
+  margin: 0 auto;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  padding-left: 10px;
+}
+
+.notes-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0 0 0;
+}
+
+.notes-items > input:checked {
+  background-color:  rgba(44, 53, 54, 0.4);
+  box-shadow: 0 0 5px 2px rgba(44, 53, 54, 0.4);
+  border-color: #fff;
+}
+
+.notes-items > input:focus {
+  box-shadow: 0 0 5px 2px rgba(44, 53, 54, 0.4);
+}
+
+.notes-items > button {
+  margin: 0 0 0 4px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  transition: 0.8s;
+  background-color: rgba(96, 108, 109, 0.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgb(228, 211, 211);
+}

@@ -1,0 +1,99 @@
+.card {
+  position: relative;
+  justify-content: space-between;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 5px;
+  animation-name: Appearance;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  background-color: rgba(249, 254, 255, 0.9);
+}
+
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.hide {
+  display: none;
+}
+
+.card .card-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card .card-content .card-title {
+  display: block;
+  line-height: 26px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card .card-title.activator {
+  cursor: pointer;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.image-no {
+  opacity: 0.3;
+}
+
+.card .card-content {
+  padding: 8px;
+  border-radius: 0 0 2px 2px;
+  box-sizing: inherit;
+}
+
+.card .card-content p {
+  margin: 0;
+}
+
+.right {
+  float: right !important;
+  text-decoration: none;
+  color: #039be5;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.8s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right:hover {
+  transform: scale(1.1);
+}
+
+.no-movies {
+  margin: 40px;
+  text-align: center;
+  color: #fff;
+}
+

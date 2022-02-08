@@ -1,0 +1,60 @@
+$pageBack: #291530;
+$mainBack: #666f83;
+$textColor: #fff;
+
+
+.app-container {
+    width: 80%;
+    padding: 2rem 0;
+    margin: 0 auto;
+} 
+
+.app-header {
+    position: relative;
+    width: 100%;
+    background-color: $pageBack;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $textColor;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.input-label {
+    font-style: oblique;
+    text-transform: capitalize;
+}
+
+.input-field {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    input {
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+        &:focus {
+            box-shadow: 0 0 5px 2px rgb(26, 13, 206);
+        }
+    }
+}
+
+.input-button {
+    margin-bottom: 10px;
+}
+
+
+.iii {
+    line-height: 100px;
+}
+
+.app-link {
+    color: #61dafb;
+}
+
+.list__container {
+    background-color: $mainBack;
+}

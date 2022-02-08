@@ -1,0 +1,59 @@
+{
+  "items": [
+    { 
+      "id": 1, 
+      "name": "FK Zenit St.",
+      "country": "Russia",
+      "town": "Petersburg",
+      "founded": 1925,
+      "website": "http://www.fc-zenit.ru",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/731.png" 
+    },
+    { 
+      "id": 2, 
+      "name": "Manchester United FC",
+      "country": "England",
+      "town": "Manchester",
+      "founded": 1878,
+      "website": "http://www.manutd.com",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/66.png" 
+    },
+    { 
+      "id": 3, 
+      "name": "Arsenal FC",
+      "country": "England",
+      "town": "London",
+      "founded": 1886,
+      "website": "http://www.arsenal.com",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/57.png" 
+    },
+    { 
+      "id": 4, 
+      "name": "FC Bayern",
+      "country": "Germany",
+      "town": "München",
+      "founded": 1900,
+      "website": "http://www.fcbayern.telekom.de/",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/5.png" 
+    },
+    { 
+      "id": 5, 
+      "name": "Real Madrid Club De Fútbol",
+      "country": "Spain",
+      "town": "Madrid",
+      "founded": 1902,
+      "website": "http://www.realmadrid.com/",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/86.png" 
+    },
+    { 
+      "id": 6, 
+      "name": "Juventus FC",
+      "country": "Italy",
+      "town": "Torino",
+      "founded": 1897,
+      "website": "http://www.juventus.com/",
+      "img": "https://data.soccernews.com/statics/images/teams/150x150/109.png" 
+    }
+    
+  ] 
+}
