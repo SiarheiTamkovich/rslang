@@ -11,8 +11,12 @@ import { SearchMovies }  from "./pages/SearchMoviesRedux";
 import { AboutMovie }    from './components/SearchMovies/AboutMovie/AboutMovie';
 import { Favorite }      from './components/SearchMovies/Favorite/Favorite';
 import { Page404 }       from "./pages/Page404";
+import { LoginPage }     from './pages/LoginPage';
+import { RequireAuth }    from './components/RequireAuth/RequireAuth'
 
 import { Layout }        from "./components/Layout";
+
+
 
 export function App() {
   return (
@@ -24,8 +28,13 @@ export function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<Single />} />
           <Route path="textbook" element={<TextbookPage />} />
-          <Route path="words-list" element={<WordsPage />} />
+          <Route path="words-list" element={
+            <RequireAuth>
+              <WordsPage />
+            </RequireAuth>
+          } />
           <Route path="audio-call" element={<AudioCallPage />} />
+          <Route path="login" element={<LoginPage />} />
           <Route path="search-movies" element={<SearchMovies />} />
           <Route path="search-movies/:id" element={<AboutMovie />} />
           <Route path="search-movies/favorite" element={<Favorite />} />
