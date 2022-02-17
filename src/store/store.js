@@ -6,6 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { notesReducer } from './notes/notesReducer';
 import { movieReducer, movieAboutReducer } from './movie/movieReducer';
 import { favoriteReducer } from './movie/favoriteReducer';
+import { usersReducer } from './users/usersReducer';
 
 const persistConfig = {
   key: 'root',
@@ -14,6 +15,7 @@ const persistConfig = {
 
 export const rootReducer = combineReducers({
   notes: notesReducer,
+  users: usersReducer,
   movie: movieReducer,
   movie_about: movieAboutReducer,
   movie_favorite: favoriteReducer,

@@ -1,7 +1,10 @@
 import { Link, Outlet } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './Layout.scss';
 
 const Layout = () => {
+  const userLogin = useSelector(state => state.users[0].isLogin);
+
   return (
     <>
       <header>
@@ -18,7 +21,12 @@ const Layout = () => {
           <Link to="/blog">Blog</Link>
         </div>
         <div>
-          <Link to="/login">Вход <i className="bi bi-box-arrow-in-right"></i></Link>
+          {!userLogin ? (
+              <Link to="/login">Вход <i className="bi bi-box-arrow-in-right"></i></Link>
+            ) : (
+              <Link to="/login">Выход <i className="bi bi-box-arrow-left"></i></Link>
+            )
+          }
         </div>
       </header>
       
@@ -27,7 +35,8 @@ const Layout = () => {
       </main>
 
       <footer className="footer-container">
-        © 2022 by Team 19 
+        <span>© 2022 by Team 19</span>
+        <i className="bi bi-github"></i>
       </footer>
     </>
   )
