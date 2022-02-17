@@ -14,7 +14,7 @@ import { Page404 }       from "./pages/Page404";
 import { LoginPage }     from './pages/LoginPage';
 import { RequireAuth }    from './components/RequireAuth/RequireAuth'
 
-import { Layout }        from "./components/Layout";
+import { Layout }        from "./components/Layout/Layout";
 
 
 

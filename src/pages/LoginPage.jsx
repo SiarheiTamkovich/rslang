@@ -30,7 +30,7 @@ export const LoginPage = () => {
         <label>
           Pass: <input type="password" name="password" />
         </label>
-        <button type="submit">Login</button>
+        <button className="btn btn-outline-success" type="submit">Login</button>
       </form>
     </div>
   )

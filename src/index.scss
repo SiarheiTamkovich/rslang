@@ -20,11 +20,12 @@ body {
 
 #root {
   background-color: var(--color-bg);
-  background-image: url(https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/06.jpg);
+/*  background-image: url(https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/06.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+*/
 }
 
 code {
@@ -32,43 +33,9 @@ code {
     monospace;
 }
 
-header {
-  background-color: rgba(44, 53, 54, 0.3);
-  padding: 23px 0;
-  text-align: center;
-}
-
-header > a {
-  color: white;
-  text-decoration: none;
-  padding: 0 1rem;
-  transition: 0.5s;
-}
-
-header > a:hover {
-  color: #fff;
-  border-bottom: 4px solid #fff;
-  border-radius: 2px;
-  background-color: rgba(44, 53, 54, 0.2);
-}
-
-.footer-container {
-  padding: 6px;
-  color: #fff;
-  font-size: 12px;
-  background-color: rgba(44, 53, 54, 0.3);
-}
-
 h1 {
   text-align: center;
 }
-
-.container {
-  min-height: calc(100vh - 105px);
-  position: relative;
-  box-sizing: border-box;
-  margin: 0 auto;
-} 
 
 .wrapper {
   max-width: 600px;
