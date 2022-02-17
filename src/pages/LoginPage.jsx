@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import './LoginPage.scss'
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ export const LoginPage = () => {
 
   return (
     <div>
-      <h1>Login page</h1>
+      <h1 className='login-page-title'>Login page</h1>
       {fromPage}
       <form onSubmit={handlerSubmit}>
         <label>
@@ -30,7 +31,7 @@ export const LoginPage = () => {
         <label>
           Pass: <input type="password" name="password" />
         </label>
-        <button className="btn btn-outline-success" type="submit">Login</button>
+        <button className="btn btn-outline-success" type="submit">Войти</button>
       </form>
     </div>
   )

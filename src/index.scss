@@ -5,6 +5,7 @@
 }
 
 :root {
+  --color: #fff;
   --color-bg: #2C2C32;
   --color-bg-hover: #0f7dc6;
 }
@@ -31,10 +32,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-h1 {
-  text-align: center;
 }
 
 .wrapper {
