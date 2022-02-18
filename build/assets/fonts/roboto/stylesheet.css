@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'TT Phobos Inline';
+    src: url('TTPhobos-Inline.eot');
+    src: local('TT Phobos Inline'), local('TTPhobos-Inline'),
+        url('TTPhobos-Inline.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Inline.woff2') format('woff2'),
+        url('TTPhobos-Inline.woff') format('woff'),
+        url('TTPhobos-Inline.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-Black.eot');
+    src: local('TT Phobos Black'), local('TTPhobos-Black'),
+        url('TTPhobos-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Black.woff2') format('woff2'),
+        url('TTPhobos-Black.woff') format('woff'),
+        url('TTPhobos-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-LightItalic.eot');
+    src: local('TT Phobos Light Italic'), local('TTPhobos-LightItalic'),
+        url('TTPhobos-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-LightItalic.woff2') format('woff2'),
+        url('TTPhobos-LightItalic.woff') format('woff'),
+        url('TTPhobos-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-Regular.eot');
+    src: local('TT Phobos Regular'), local('TTPhobos-Regular'),
+        url('TTPhobos-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Regular.woff2') format('woff2'),
+        url('TTPhobos-Regular.woff') format('woff'),
+        url('TTPhobos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-DemiBold.eot');
+    src: local('TT Phobos DemiBold'), local('TTPhobos-DemiBold'),
+        url('TTPhobos-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-DemiBold.woff2') format('woff2'),
+        url('TTPhobos-DemiBold.woff') format('woff'),
+        url('TTPhobos-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-ExtraBold.eot');
+    src: local('TT Phobos ExtraBold'), local('TTPhobos-ExtraBold'),
+        url('TTPhobos-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-ExtraBold.woff2') format('woff2'),
+        url('TTPhobos-ExtraBold.woff') format('woff'),
+        url('TTPhobos-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-ExtraBoldItalic.eot');
+    src: local('TT Phobos ExtraBold Italic'), local('TTPhobos-ExtraBoldItalic'),
+        url('TTPhobos-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-ExtraBoldItalic.woff2') format('woff2'),
+        url('TTPhobos-ExtraBoldItalic.woff') format('woff'),
+        url('TTPhobos-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-BlackItalic.eot');
+    src: local('TT Phobos Black Italic'), local('TTPhobos-BlackItalic'),
+        url('TTPhobos-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-BlackItalic.woff2') format('woff2'),
+        url('TTPhobos-BlackItalic.woff') format('woff'),
+        url('TTPhobos-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-Bold.eot');
+    src: local('TT Phobos Bold'), local('TTPhobos-Bold'),
+        url('TTPhobos-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Bold.woff2') format('woff2'),
+        url('TTPhobos-Bold.woff') format('woff'),
+        url('TTPhobos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-DemiBoldItalic.eot');
+    src: local('TT Phobos DemiBold Italic'), local('TTPhobos-DemiBoldItalic'),
+        url('TTPhobos-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-DemiBoldItalic.woff2') format('woff2'),
+        url('TTPhobos-DemiBoldItalic.woff') format('woff'),
+        url('TTPhobos-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-Light.eot');
+    src: local('TT Phobos Light'), local('TTPhobos-Light'),
+        url('TTPhobos-Light.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Light.woff2') format('woff2'),
+        url('TTPhobos-Light.woff') format('woff'),
+        url('TTPhobos-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-Italic.eot');
+    src: local('TT Phobos Italic'), local('TTPhobos-Italic'),
+        url('TTPhobos-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Italic.woff2') format('woff2'),
+        url('TTPhobos-Italic.woff') format('woff'),
+        url('TTPhobos-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Phobos Stencil';
+    src: url('TTPhobos-Stencil.eot');
+    src: local('TT Phobos Stencil'), local('TTPhobos-Stencil'),
+        url('TTPhobos-Stencil.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-Stencil.woff2') format('woff2'),
+        url('TTPhobos-Stencil.woff') format('woff'),
+        url('TTPhobos-Stencil.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Phobos';
+    src: url('TTPhobos-BoldItalic.eot');
+    src: local('TT Phobos Bold Italic'), local('TTPhobos-BoldItalic'),
+        url('TTPhobos-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTPhobos-BoldItalic.woff2') format('woff2'),
+        url('TTPhobos-BoldItalic.woff') format('woff'),
+        url('TTPhobos-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
