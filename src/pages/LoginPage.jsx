@@ -34,23 +34,28 @@ export const LoginPage = () => {
 
 
   return (
-    <div>
-      <h1 className='login-page-title'>Регистрация пользователя</h1>
+    <div className="login-page-container">
       {user === userSelector.userName ? null : "Пользователя с таким именем не существует!"}
       {password === userSelector.userPass ? null : "Пароль не правильный!"}
       {!userSelector.isLogin ?
         (
-          <form onSubmit={handlerSubmit}>
-            <label>
-              Name: <input name="username" />
-            </label>
-            <label>
-              Pass: <input type="password" name="password" />
-            </label>
-            <button className="btn btn-outline-success" type="submit">Вход</button>
-          </form>
+          <>
+            <h1 className='login-page-title'>Регистрация пользователя</h1>
+            <form className="login-form" onSubmit={handlerSubmit}>
+              <label>
+                Имя: <input name="username" className="form-control"/>
+              </label>
+              <label>
+                Пароль: <input type="password" name="password" className="form-control"/>
+              </label>
+              <button className="btn btn-secondary" type="submit">Вход</button>
+            </form>
+          </>
         ) : (
-          <button className="btn btn-outline-success" onClick={userLogout}>Выход</button>
+          <>
+            <h1 className='login-page-title'>Для выхода нажмите:</h1>
+            <button className="btn btn-secondary" onClick={userLogout}>Выход</button>
+          </>
         )
       }
     </div>

@@ -6,6 +6,7 @@
 } 
 
 header {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   background-color: rgba(44, 53, 54, 0.3);
@@ -23,6 +24,7 @@ header > div > i {
 
 header > div > a:hover {
   color: #fff;
+  margin-bottom: -4px;
   border-bottom: 4px solid #fff;
   border-radius: 2px;
   background-color: rgba(44, 53, 54, 0.2);
