@@ -16,7 +16,7 @@ header {
 
 header > div > a,
 header > div > i {
-  color: white;
+  color: var(--color-font);
   text-decoration: none;
   padding: 0 0.5rem;
   transition: 0.5s;
@@ -38,8 +38,17 @@ header > div > a:hover {
 }
 
 .footer-container {
+  display: flex;
+  justify-content: space-between;
   padding: 6px;
   color: #fff;
   font-size: 12px;
   background-color: rgba(44, 53, 54, 0.3);
+}
+
+.footer-container > a {
+  color: #fff;
+  width: 50px;
+  height: 25px;
+  text-align: right;
 }

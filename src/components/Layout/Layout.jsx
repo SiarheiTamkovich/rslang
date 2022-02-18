@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import rsscool from '../../img/rs_school_js.svg'
 import './Layout.scss';
 
 const Layout = () => {
@@ -35,8 +36,13 @@ const Layout = () => {
       </main>
 
       <footer className="footer-container">
+        <a href="https://app.rs.school/" target="_blank" rel="noreferrer">
+          <img src={rsscool} alt="rs-scool" className="rsscool-img"></img>
+        </a>
         <span>© 2022 by Team 19</span>
-        <i className="bi bi-github"></i>
+        <a href="https://github.com/SiarheiTamkovich/rslang" target="_blank" rel="noreferrer">
+          <i className="bi bi-github"></i>
+        </a>
       </footer>
     </>
   )
