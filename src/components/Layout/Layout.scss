@@ -28,6 +28,13 @@ header > div > a:hover {
   background-color: rgba(44, 53, 54, 0.2);
 }
 
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .footer-container {
   padding: 6px;
   color: #fff;

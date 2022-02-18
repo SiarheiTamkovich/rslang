@@ -11,7 +11,7 @@ const Layout = () => {
         <div>
           <i className="bi bi-list"></i>
         </div>
-        <div>
+        <div className="nav-menu">
           <Link to="/">Главная</Link>
           <Link to="/textbook">Учебник</Link>
           <Link to="/words-list">Слова</Link>
