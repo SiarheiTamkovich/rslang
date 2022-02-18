@@ -17,8 +17,8 @@ const Layout = () => {
           <Link to="/textbook">Учебник</Link>
           <Link to="/words-list">Слова</Link>
           <Link to="/audio-call">Аудиовызов</Link>
-          <Link to="/search-movies">SearchMovies</Link>
-          <Link to="/about">About</Link>
+          <Link to="/search-movies">Поиск</Link>
+          <Link to="/about">О команде</Link>
           <Link to="/blog">Blog</Link>
         </div>
         <div>
