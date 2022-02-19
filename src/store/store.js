@@ -7,6 +7,7 @@ import { notesReducer } from './notes/notesReducer';
 import { movieReducer, movieAboutReducer } from './movie/movieReducer';
 import { favoriteReducer } from './movie/favoriteReducer';
 import { usersReducer } from './users/usersReducer';
+import { wordsReducer } from './words/wordsReducer';
 
 const persistConfig = {
   key: 'root',
@@ -16,6 +17,7 @@ const persistConfig = {
 export const rootReducer = combineReducers({
   notes: notesReducer,
   users: usersReducer,
+  words: wordsReducer,
   movie: movieReducer,
   movie_about: movieAboutReducer,
   movie_favorite: favoriteReducer,
