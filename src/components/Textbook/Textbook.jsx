@@ -1,6 +1,7 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchWords } from '../../store/words/wordsFetchAction';
 import { Cards } from './Cards/Cards';
+import { Loader } from './Loader/Loader';
 import { PaginatedItems } from './Paginator/Paginator';
 import "./Textbook.scss";
 
@@ -9,6 +10,7 @@ let page = 0;
 
 export function Textbook(){
   const dispatch = useDispatch();
+  const wordsSelector = useSelector(state => state.words)
 
   const onClickLoadWords = (event) => {
     group = (event.target.dataset.group)
@@ -27,7 +29,7 @@ export function Textbook(){
           <button className="btn btn-secondary" data-group="4" onClick={onClickLoadWords}>Раздел 5</button>
           <button className="btn btn-secondary" data-group="5" onClick={onClickLoadWords}>Раздел 6</button>
         </div>
-        <Cards page={0} />
+          {!wordsSelector.length === 20 ? <Loader /> : <Cards page={0} />}
         <div className="paginator-container">
           <PaginatedItems itemsPerPage={20} /> 
         </div>
