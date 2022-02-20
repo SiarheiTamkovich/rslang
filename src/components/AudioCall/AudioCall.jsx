@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Script } from './Script.jsx'
+import { Script } from './Script'
 import "./AudioCall.scss"
 
 export const AudioCall = () => {
