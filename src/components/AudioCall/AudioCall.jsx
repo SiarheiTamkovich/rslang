@@ -1,13 +1,16 @@
-import { Script } from './Script'
+import { useSelector } from 'react-redux';
+import { Script } from './Script.jsx'
 import "./AudioCall.scss"
 
 export const AudioCall = () => {
   
+  const wordsSelector = useSelector(state => state.words[0]);
+  localStorage.setItem('group',wordsSelector.group);
+  localStorage.setItem('page',wordsSelector.page);
+
   return (
-    <>
-      <div className="audio-call-container">
-        <h1>It is AudioCall task</h1>
-      </div>
+    <div className="audio-call-container">
+      <h1>Игра Аудио-вызов</h1>
       <div className="wrapper">
         <div className="reset hidden"></div>
         <div className="question-ac"></div>
@@ -20,6 +23,6 @@ export const AudioCall = () => {
         </div>
         <div className="button-audio-call" onClick={Script} >Start!</div>
       </div>
-    </>
+    </div>
   )
 }

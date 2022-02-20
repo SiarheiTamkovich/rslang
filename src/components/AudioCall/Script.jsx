@@ -1,6 +1,8 @@
-export const Script = () => {
-  let page = 0;
-  let group = 0;
+export const Script = (page, group) => {
+  
+  page = localStorage.getItem('page');
+  group = localStorage.getItem('group');
+  
   let audio;
   const url = 'https://gosujmen-learnwords.herokuapp.com/';
   let dataUrl = `${url}words?page=${page}&group=${group}`;
@@ -95,7 +97,7 @@ export const Script = () => {
         let questionUrl = `${url}${data[ind].audio}`;
         audio = new Audio(questionUrl);
         audio.play();
-        console.log('click');
+//        console.log('click');
       })
       ansBlock.addEventListener('click', (event) => {
         if (event.target.matches('.answer')) {
