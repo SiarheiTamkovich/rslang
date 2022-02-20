@@ -1,4 +1,61 @@
-.about-container h1,
-.about-container p {
-  color: #fff;
+.about-container > h1 {
+  margin: 0 0 30px 0;
+  padding: 10px 0 0 0;
+  font-family: "TT Phobos Inline";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+  color: var(--color-bg-light);
 }
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1296px;
+  margin: 10px 10px; 
+}
+
+.team-member {
+  width: 32%;
+  margin-bottom: 45px;
+  background-color: var(--color-bg-light);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description-wrapper > a {
+  color: var(--color-bg);
+}
+
+.team-member img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.description-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.description-wrapper > h3 {
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) { 
+
+  .team {
+    flex-direction: column;
+    
+  }
+
+  .team-member {
+    width: 100%;
+  }
+  
+ }

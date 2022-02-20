@@ -1,17 +1,7 @@
-import { useEffect } from "react";
+
 import "./Sprint.scss";
 
 export const Sprint = () => {
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "./Script.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
 
   return (
     <div className="sprint-container">
