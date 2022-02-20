@@ -88,7 +88,7 @@
   background-color: whitesmoke;
   cursor: pointer;
 }
-.correct {
+.correct-sp {
   align-self: center;
   display: flex;
   justify-content: center;
@@ -103,11 +103,11 @@
   cursor: pointer;
 }
 
-.correct, .correct:hover {
+.correct-sp, .correct-sp:hover {
   animation: correct 0.5s;
 }
  
-.incorrect, .incorrect:hover {
+.incorrect-sp, .incorrect-sp:hover {
   animation: incorrect 0.5s;
 }
 

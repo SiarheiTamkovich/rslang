@@ -2,22 +2,53 @@
   color: #fff;
 }
 
+.wrapper {
+  padding: 20px 20px 20px 20px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reset {
+  width: 45px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: 40px;
+  cursor: pointer;
+  background: center / contain no-repeat url(../../img/repeat.png);
+}
+
+.reset:hover {
+  transform: rotate(+30deg);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .answer-block {
   display: flex;
   justify-content: space-around;
 }
 
 .answer {
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
-  border: solid 2px;
-  border-radius: 5px;
-  border-color: black;
-  color: black;
-  background-color: whitesmoke;
+  width: 50%;
+  max-width: 250px;
+  height: 40px;
+  margin: 10px 10px 10px 10px;
+  border: 3px solid #278d9f;
+  border-radius: 30px;
+  color: var(--color-font);
+  background-color: rgba(31,112,127,.3);
+  cursor: pointer;
 }
 
 .answer:hover {
@@ -25,37 +56,53 @@
   color: whitesmoke;
 }
 
-.question {
+.question-ac {
   align-self: center;
   width: 40px;
   height: 40px;
   background: url(../../img/sound.png) no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 
 .result {
-  align-self: center;
+  margin: 10px 10px 10px 10px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  background-color: var(--color-font);
 }
 
-.button {
+.resultTable-ac {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin: 3px 10px 3px 10px;
+}
+
+.resultTable-ac:nth-child(even) {
+  color: var(--color-font);
+  background-color: #0f7dc6;;
+}
+
+.button-audio-call {
   align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
-  border: solid 2px;
-  border-radius: 5px;
-  border-color: black;
-  color: black;
-  background-color: whitesmoke;
+  width: 50%;
+  max-width: 250px;
+  height: 40px;
+  margin: 20px auto 0;
+  border: 3px solid #278d9f;
+  border-radius: 30px;
+  color: var(--color-font);
+  background-color: rgba(31,112,127,.3);
   cursor: pointer;
 }
 
 .resultTable {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  width: 100%;
   margin: 3px 10px 3px 10px;
 }
 
@@ -64,11 +111,11 @@
 }
 
 .correct, .correct:hover {
-  animation: correct 0.5s;
+  background-color: green;
 }
- 
+
 .incorrect, .incorrect:hover {
-  animation: incorrect 0.5s;
+  background-color: red;
 }
 
 .plus {
@@ -79,14 +126,4 @@
 .minus {
   width: 15px;
   background: center / contain no-repeat url(../../img/minus-.png);
-}
-
-@keyframes correct {
-  0% {background-color: green;}
-  100% {background-color: green;}
-}
-
-@keyframes incorrect {
-  0% {background-color: red;}
-  100% {background-color: red;}
 }

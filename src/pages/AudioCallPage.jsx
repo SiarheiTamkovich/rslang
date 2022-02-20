@@ -1,4 +1,4 @@
-import { AudioCall } from "../components/AudioCall/AudioCall.js"
+import { AudioCall } from "../components/AudioCall/AudioCall";
 
 export const AudioCallPage = () => {
   
