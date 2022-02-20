@@ -4,7 +4,7 @@ import './Cards.scss';
 export const Cards = (page) => {
   const wordsSelector = useSelector(state => state.words)
   let key = 0;
-  console.log(wordsSelector)
+  //console.log(wordsSelector)
 
   return (
     <div className="cards-container" >

@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { fetchWords } from '../../store/words/wordsFetchAction';
 import { Cards } from './Cards/Cards';
+import { PaginatedItems } from './Paginator/Paginator';
 import "./Textbook.scss";
 
 let group = 0;
@@ -27,7 +28,9 @@ export function Textbook(){
           <button className="btn btn-secondary" data-group="5" onClick={onClickLoadWords}>Раздел 6</button>
         </div>
         <Cards page={0} />
-        <div className="pagination"></div>
+        <div className="paginator-container">
+          <PaginatedItems itemsPerPage={20} /> 
+        </div>
       </div>
     </>
   )
