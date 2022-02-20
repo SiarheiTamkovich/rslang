@@ -4,7 +4,7 @@ import cv from "../../img/cv.jpg"
 export const About = () => {
   return (
     <div className="about-container">
-      <h1> About Us</h1>
+      <h1>О команде</h1>
       <div className="team">
         <div className="team-member">
           <img src="https://siarheitamkovich.github.io/rsschool-cv/img/pict.png" alt="team-member" />
