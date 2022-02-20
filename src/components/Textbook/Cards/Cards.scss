@@ -1,4 +1,7 @@
 .word-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: black;
   box-sizing: border-box;
   padding: 1rem;
@@ -28,7 +31,7 @@
 }
 
 .btn-add-word {
-  margin: 0 0 0 50px;
+  margin: 0 auto;
 }
 
 .word {
