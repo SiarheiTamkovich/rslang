@@ -4,8 +4,6 @@ import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { notesReducer } from './notes/notesReducer';
-import { movieReducer, movieAboutReducer } from './movie/movieReducer';
-import { favoriteReducer } from './movie/favoriteReducer';
 import { usersReducer } from './users/usersReducer';
 import { wordsReducer } from './words/wordsReducer';
 
@@ -18,9 +16,6 @@ export const rootReducer = combineReducers({
   notes: notesReducer,
   users: usersReducer,
   words: wordsReducer,
-  movie: movieReducer,
-  movie_about: movieAboutReducer,
-  movie_favorite: favoriteReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -8,18 +8,11 @@ import { TextbookPage }  from "./pages/TextbookPage";
 import { WordsPage }     from "./pages/WordsPage";
 import { AudioCallPage } from './pages/AudioCallPage';
 import { SprintPage }    from './pages/SprintPage';
-import { SearchMovies }  from "./pages/SearchMoviesRedux";
-import { AboutMovie }    from './components/SearchMovies/AboutMovie/AboutMovie';
-import { Favorite }      from './components/SearchMovies/Favorite/Favorite';
 import { Page404 }       from "./pages/Page404";
 import { LoginPage }     from './pages/LoginPage';
 import { RequireAuth }   from './components/RequireAuth/RequireAuth';
 
-
 import { Layout }        from "./components/Layout/Layout";
-
-
-
 
 export function App() {
   return (
@@ -39,9 +32,6 @@ export function App() {
           <Route path="audio-call" element={<AudioCallPage />} />
           <Route path="sprint" element={<SprintPage />} />
           <Route path="login" element={<LoginPage />} />
-          <Route path="search-movies" element={<SearchMovies />} />
-          <Route path="search-movies/:id" element={<AboutMovie />} />
-          <Route path="search-movies/favorite" element={<Favorite />} />
           <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>

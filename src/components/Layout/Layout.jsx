@@ -18,7 +18,6 @@ const Layout = () => {
           <Link to="/words-list">Слова</Link>
           <Link to="/audio-call">Аудиовызов</Link>
           <Link to="/sprint">Спринт</Link>
-          <Link to="/search-movies">Поиск</Link>
           <Link to="/about">О команде</Link>
           <Link to="/blog">Blog</Link>
         </div>
