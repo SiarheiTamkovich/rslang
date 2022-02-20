@@ -1,7 +1,8 @@
 export const Script = () => {
 
-  let page = 0;
-  let group = 0;
+  let page = localStorage.getItem('page');
+  let group = localStorage.getItem('group');
+
  // let res = [];
   const url = 'https://gosujmen-learnwords.herokuapp.com/';
   const dataUrl = `${url}words?page=${page}&group=${group}`;
