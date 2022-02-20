@@ -17,6 +17,7 @@ const Layout = () => {
           <Link to="/textbook">Учебник</Link>
           <Link to="/words-list">Слова</Link>
           <Link to="/audio-call">Аудиовызов</Link>
+          <Link to="/sprint">Спринт</Link>
           <Link to="/search-movies">Поиск</Link>
           <Link to="/about">О команде</Link>
           <Link to="/blog">Blog</Link>
@@ -40,9 +41,17 @@ const Layout = () => {
           <img src={rsscool} alt="rs-scool" className="rsscool-img"></img>
         </a>
         <span>© 2022 by Team 19</span>
-        <a href="https://github.com/SiarheiTamkovich/rslang" target="_blank" rel="noreferrer">
-          <i className="bi bi-github"></i>
-        </a>
+        <div className='git'>
+          <a href="https://github.com/veru44ia" target="_blank" rel="noreferrer">
+            <i className="bi bi-github"> Veru44ia </i>
+          </a>
+          <a href="https://github.com/gosujmen" target="_blank" rel="noreferrer">
+            <i className="bi bi-github"> GosuJmen </i>
+          </a>
+          <a href="https://github.com/SiarheiTamkovich/rslang" target="_blank" rel="noreferrer">
+            <i className="bi bi-github"> Siarhei </i>
+          </a>
+        </div>
       </footer>
     </>
   )

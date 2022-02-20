@@ -46,9 +46,16 @@ header > div > a:hover {
   background-color: rgba(44, 53, 54, 0.3);
 }
 
-.footer-container > a {
+.footer-container > a,
+.git > a {
   color: #fff;
   width: 50px;
   height: 25px;
   text-align: right;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.git > a {
+  font-size: 10px;
 }

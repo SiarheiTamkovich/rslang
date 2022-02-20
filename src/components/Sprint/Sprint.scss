@@ -1,0 +1,142 @@
+.sprint-container{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timer {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  width: 100px;
+  height: 100px;
+}
+.question {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.correctCount {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.count {
+  width: 15px;
+  height: 15px;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+.correctSound {
+  width: 30px;
+  height: 30px;
+  background: center / contain no-repeat url(../../img/sound.png);
+}
+.possibleQuestion {
+}
+.result {
+  margin: 10px 10px 10px 10px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.resultTable {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin: 3px 10px 3px 10px;
+}
+
+.resultTable:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.answer-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.unCorrect {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.correct {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.correct, .correct:hover {
+  animation: correct 0.5s;
+}
+ 
+.incorrect, .incorrect:hover {
+  animation: incorrect 0.5s;
+}
+
+.button {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.plus {
+  width: 15px;
+  background: center / contain no-repeat url(../../img/plus+.png);
+}
+
+.minus {
+  width: 15px;
+  background: center / contain no-repeat url(../../img/minus-.png);
+}
+

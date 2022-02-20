@@ -7,14 +7,17 @@ import { Single }        from "./pages/Single";
 import { TextbookPage }  from "./pages/TextbookPage";
 import { WordsPage }     from "./pages/WordsPage";
 import { AudioCallPage } from './pages/AudioCallPage';
+import { SprintPage }    from './pages/SprintPage';
 import { SearchMovies }  from "./pages/SearchMoviesRedux";
 import { AboutMovie }    from './components/SearchMovies/AboutMovie/AboutMovie';
 import { Favorite }      from './components/SearchMovies/Favorite/Favorite';
 import { Page404 }       from "./pages/Page404";
 import { LoginPage }     from './pages/LoginPage';
-import { RequireAuth }    from './components/RequireAuth/RequireAuth'
+import { RequireAuth }   from './components/RequireAuth/RequireAuth';
+
 
 import { Layout }        from "./components/Layout/Layout";
+
 
 
 
@@ -34,6 +37,7 @@ export function App() {
             </RequireAuth>
           } />
           <Route path="audio-call" element={<AudioCallPage />} />
+          <Route path="sprint" element={<SprintPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="search-movies" element={<SearchMovies />} />
           <Route path="search-movies/:id" element={<AboutMovie />} />
