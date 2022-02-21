@@ -1,0 +1,24 @@
+.page-stat-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #278d9f;
+  background: url(../img/bg-stat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  border-radius: 8px;
+}
+
+.page-stat-block > h1 {
+  font-family: 'TT Phobos Inline';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50%;
+}

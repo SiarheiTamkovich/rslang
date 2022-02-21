@@ -1,0 +1,37 @@
+.words-container {
+  background-color: var(--color-bg-b);
+  border-radius: 8px;
+}
+
+.words-container > h1 {
+  margin: 0 0 10px 0;
+  padding: 10px 0 0 0;
+  font-family: "TT Phobos Inline";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+  color: var(--color-bg);
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.btn-group > button {
+  box-sizing: border-box;
+  margin: 8px ;
+  padding: 5px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  padding: 10px;
+}
