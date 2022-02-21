@@ -5,7 +5,7 @@ export const Sprint = () => {
 
   return (
     <div className="sprint-container">
-      <h1>Игра Спринт</h1>
+      <h1>Игра "Спринт"</h1>
       <div className="wrapper-sp">
         <div className="reset hidden"></div>
         <div className="topSection">

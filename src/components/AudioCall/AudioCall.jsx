@@ -10,7 +10,7 @@ export const AudioCall = () => {
 
   return (
     <div className="audio-call-container">
-      <h1>Игра Аудио-вызов</h1>
+      <h1>Игра "Аудиовызов"</h1>
       <div className="wrapper">
         <div className="reset hidden"></div>
         <div className="question-ac"></div>

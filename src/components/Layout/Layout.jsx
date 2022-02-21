@@ -19,7 +19,7 @@ const Layout = () => {
           <Link to="/audio-call">Аудиовызов</Link>
           <Link to="/sprint">Спринт</Link>
           <Link to="/about">О команде</Link>
-          <Link to="/blog">Blog</Link>
+          <Link to="/stat">Статистика</Link>
         </div>
         <div>
           {!userLogin ? (

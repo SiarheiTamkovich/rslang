@@ -9,7 +9,7 @@ export const Cards = (page) => {
   const dispatch = useDispatch();
 
   const onClickAddWords = (event) => {
-    console.log(diffWordsSelector);
+
     const itemID = event.target.parentNode.dataset.id
     if(diffWordsSelector.filter(item => item.id === itemID).length > 0) return;
 
