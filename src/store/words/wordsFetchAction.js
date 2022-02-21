@@ -2,6 +2,7 @@ const loadWordsAction = (payload) => ({
   type: 'LOAD_WORDS',
   payload,
 });
+
 const mainURL = 'https://react-learnwords-example.herokuapp.com/';
 
 export const fetchWords = (group, page) => {

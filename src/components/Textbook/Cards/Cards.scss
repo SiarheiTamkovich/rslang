@@ -9,10 +9,18 @@
   position: relative;
   background-color: var(--color-bg-light);
   transition: box-shadow 0.25s;
-  border-radius: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--color-bg-b);
+  box-shadow: 10px 5px 5px var(--color-bg-b);
   animation-name: Appearance;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  transform: translate();
+  transition: 0.8s;
+}
+
+.word-card:hover {
+  transform: scale(1.04);
 }
 
 .card-img{

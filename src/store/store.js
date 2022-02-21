@@ -6,6 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { notesReducer } from './notes/notesReducer';
 import { usersReducer } from './users/usersReducer';
 import { wordsReducer } from './words/wordsReducer';
+import { DiffWordsReducer } from './words/DiffWordsReduser';
 
 const persistConfig = {
   key: 'root',
@@ -16,6 +17,7 @@ export const rootReducer = combineReducers({
   notes: notesReducer,
   users: usersReducer,
   words: wordsReducer,
+  diffWords: DiffWordsReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

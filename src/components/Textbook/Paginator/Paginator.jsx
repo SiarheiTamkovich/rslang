@@ -23,7 +23,8 @@ export function PaginatedItems({ itemsPerPage }) {
   const dispatch = useDispatch();
  // const url = new URL(window.location.href);
   const wordsSelector = useSelector(state => state.words);
-  const group = wordsSelector[0].group;
+  let group = 0;
+  if (wordsSelector.length !== 0) group = wordsSelector[0].group;
   const itemsAll = 600;
   const items = useMemo(() => [...Array(itemsAll).keys()], [itemsAll]);
   

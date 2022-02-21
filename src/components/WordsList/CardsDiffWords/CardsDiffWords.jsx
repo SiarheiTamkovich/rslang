@@ -1,16 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { AddDiffWords } from '../../../store/words/DiffWordsAction'
-import './Cards.scss';
+import { AddDiffWords } from '../../../store/words/DiffWordsAction';
 
-export const Cards = (page) => {
+export const CardsDiff = (page) => {
   const wordsSelector = useSelector(state => state.words)
-  const userLoginSelector = useSelector(state => state.users[0].isLogin);
   const diffWordsSelector = useSelector(state => state.diffWords)
   const dispatch = useDispatch();
 
-  const onClickAddWords = (event) => {
-
-    console.log(diffWordsSelector)
+  const onClickRemoveWords = (event) => {
     dispatch(
       AddDiffWords(
         wordsSelector.filter(
@@ -25,7 +21,7 @@ export const Cards = (page) => {
 
   return (
     <div className="cards-container" >
-      {wordsSelector.map(elem =>
+      {diffWordsSelector.map(elem =>
         <div className='word-card' key={key++} data-id={elem.id}>
           <img src={`https://react-learnwords-example.herokuapp.com/${elem.image}`} alt={elem.word} className="card-img"></img>
           <div className="card-description">
@@ -42,9 +38,7 @@ export const Cards = (page) => {
               <p className="word-about">{elem.textMeaningTranslate}</p>
             </div>
           </div>
-          {userLoginSelector &&
-            <button className="btn-add-word btn btn-secondary" onClick={onClickAddWords}>Добавить в слова</button>
-          }
+            <button className="btn-add-word btn btn-secondary" onClick={onClickRemoveWords}>Удилить из списка</button>
         </div>
       )}
     </div>
