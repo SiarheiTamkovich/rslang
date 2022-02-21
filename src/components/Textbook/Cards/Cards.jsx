@@ -5,18 +5,29 @@ import './Cards.scss';
 export const Cards = (page) => {
   const wordsSelector = useSelector(state => state.words)
   const userLoginSelector = useSelector(state => state.users[0].isLogin);
-//  const diffWordsSelector = useSelector(state => state.diffWords)
+  const diffWordsSelector = useSelector(state => state.diffWords)
   const dispatch = useDispatch();
 
   const onClickAddWords = (event) => {
+    console.log(diffWordsSelector);
+    const itemID = event.target.parentNode.dataset.id
+    if(diffWordsSelector.filter(item => item.id === itemID).length > 0) return;
 
     dispatch(
       AddDiffWords(
-        wordsSelector.filter(
-          item => item.id === event.target.parentNode.dataset.id
+        wordsSelector.filter(item => 
+          item.id === event.target.parentNode.dataset.id
         )
       )
     )
+  }
+
+  const markElem = (id) => {
+    let result;
+    diffWordsSelector.forEach(elem => {
+      if (elem.id === id) result = true;
+    })
+    return result;
   }
 
   let key = 0;
@@ -24,7 +35,7 @@ export const Cards = (page) => {
   return (
     <div className="cards-container" >
       {wordsSelector.map(elem =>
-        <div className='word-card' key={key++} data-id={elem.id}>
+        <div className={userLoginSelector & markElem(elem.id) ? 'word-card selected' : 'word-card'} key={key++} data-id={elem.id}>
           <img src={`https://react-learnwords-example.herokuapp.com/${elem.image}`} alt={elem.word} className="card-img"></img>
           <div className="card-description">
             <div className="card-wrapper">
@@ -40,8 +51,11 @@ export const Cards = (page) => {
               <p className="word-about">{elem.textMeaningTranslate}</p>
             </div>
           </div>
-          {userLoginSelector &&
-            <button className="btn-add-word btn btn-secondary" onClick={onClickAddWords}>Добавить в слова</button>
+          {userLoginSelector & !markElem(elem.id) ?
+            <button className="btn-add-word btn btn-secondary"
+              onClick={onClickAddWords}>
+                Добавить в слова
+            </button> : ""
           }
         </div>
       )}

@@ -49,3 +49,8 @@
 .word-about {
   margin: 0 0 4px 0;
 }
+
+.selected {
+  background-color: grey;
+  background-blend-mode: multiply;
+}
