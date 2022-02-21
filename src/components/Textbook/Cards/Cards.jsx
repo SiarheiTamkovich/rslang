@@ -5,17 +5,15 @@ import './Cards.scss';
 export const Cards = (page) => {
   const wordsSelector = useSelector(state => state.words)
   const userLoginSelector = useSelector(state => state.users[0].isLogin);
-  const diffWordsSelector = useSelector(state => state.diffWords)
+//  const diffWordsSelector = useSelector(state => state.diffWords)
   const dispatch = useDispatch();
 
   const onClickAddWords = (event) => {
 
-    console.log(diffWordsSelector)
     dispatch(
       AddDiffWords(
         wordsSelector.filter(
-          item => 
-          item.id === event.target.parentNode.dataset.id
+          item => item.id === event.target.parentNode.dataset.id
         )
       )
     )

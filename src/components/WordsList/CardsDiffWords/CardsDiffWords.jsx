@@ -1,18 +1,14 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { AddDiffWords } from '../../../store/words/DiffWordsAction';
+import { RemoveDiffWords } from '../../../store/words/DiffWordsAction';
 
 export const CardsDiff = (page) => {
-  const wordsSelector = useSelector(state => state.words)
   const diffWordsSelector = useSelector(state => state.diffWords)
   const dispatch = useDispatch();
 
   const onClickRemoveWords = (event) => {
     dispatch(
-      AddDiffWords(
-        wordsSelector.filter(
-          item => 
-          item.id === event.target.parentNode.dataset.id
-        )
+      RemoveDiffWords(
+        event.target.parentNode.dataset.id
       )
     )
   }
