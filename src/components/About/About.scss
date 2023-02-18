@@ -1,0 +1,61 @@
+.about-container > h1 {
+  margin: 0 0 30px 0;
+  padding: 10px 0 0 0;
+  font-family: "TT Phobos Inline";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+  color: var(--color-bg-light);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.team-member {
+  margin-bottom: 45px;
+  background-color: var(--color-bg-light);
+  border-radius: 1rem;
+  overflow: hidden;
+  color: black;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description-wrapper > a {
+  color: var(--color-bg);
+}
+
+.team-member img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.description-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.description-wrapper > h3 {
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) { 
+
+  .team {
+    flex-direction: column;
+    
+  }
+
+  .team-member {
+    width: 100%;
+  }
+  
+ }
