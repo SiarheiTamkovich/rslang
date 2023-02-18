@@ -3,7 +3,7 @@ const loadWordsAction = (payload) => ({
   payload,
 });
 
-const mainURL = 'https://react-learnwords-example.herokuapp.com/';
+const mainURL = 'https://react-rslang-be-production-bd97.up.railway.app/';
 
 export const fetchWords = (group, page) => {
 
